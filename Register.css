@@ -1,0 +1,107 @@
+.Info{
+    position:absolute;
+    top:80%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(1,1,1,1);
+    box-sizing: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 15PX 25PX rgba(0,0,0,6);
+    border-radius: 10px;
+}
+.Info .first {
+    position: relative;
+}
+.Info .second{
+    position: relative;
+}
+.Info .third {
+    position: relative;
+}
+.Info .first h2,h4,p{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.Info .second h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.Info .second input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px;
+        border:none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+}
+.Info .second label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events:none;
+    transition: .5s;
+}
+.Info .second input:focus ~ label,
+.Info .second input:valid ~ label
+{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+.Info .second p{
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    text-align: justify;
+}
+.Info .third input{
+        margin: 0px;
+        color: #fff;
+        margin-bottom: 10px;
+        border:none;
+        outline: none;
+        background: transparent;
+}
+.Info .third label{
+    color: aquamarine;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 120px;
+    width: 250px;
+}
+.Info .third p{
+    font-size: 14px;
+    margin-left: 0px;
+    margin-bottom:20px;
+}
+.Info form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+.Info a:hover{
+    color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #0000;
+}
