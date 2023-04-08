@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
 </head>
 <body>
     <div>
@@ -14,58 +15,62 @@
     </div>
     <hr>
     <center>
-        <div>
-            <h2>Create an account</h2>
-            <h4>Kitsune rewards</h4>
-            <p>Join our membership to earn points for free food and drinks</p>
-        </div>
-        <div>
-            <form name="regForm" method="post">
-                <fieldset style="width:400px">
-                    <div>
-                        <h3>Personal Information</h3>
-                        <input type="text" placeholder="First Name"/>
-                        <input type="text" placeholder="Last Name"/>
-                    </div>
-                    <div>
-                        <h3>Account Security</h3>
-                        <input type="email" placeholder="Email Address" size="25"/>
-                        <font size="3" color="grey">
-                        <p style="margin-top:auto;">
-                            This will be your username
+        <div class="Info">
+                <div class="first">
+                    <h2>Create an account</h2>
+                    <h4>Kitsune rewards</h4>
+                    <p>Join our membership to earn points for free food and drinks</p>
+                </div>
+            <form>
+                <div class="second">
+                    <h3>Personal Information</h3>
+                </div>
+                <div class="second">
+                    <input type="text" name="" required=""/>
+                    <label>First Name</label>
+                </div>
+                <div class="second">
+                    <input type="text" name="" required=""/>
+                    <label>Last Name</label>
+                </div>
+                <div class="second">
+                    <h3>Account Security</h3>
+                </div>
+                <div class="second">
+                    <input type="email" name="" required=""/>
+                    <label>Email Address</label>
+                </div>
+                <div class="second">
+                    <input type="password" name="" required=""/>
+                    <label>Password</label>
+                </div>
+                <div class="second">
+                        <p>
+                            Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.
                         </p>
-                        </font>
-                        <input type="password" placeholder="Password" style="width: 200px;"/>
-                        <font size="3" color="grey" face=""> <!--later use css-->
-                            <p style="margin-top: 0px;">
-                                Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.
-                            </p>
-                        </font>
-                    </div>
-                    <div style="margin-top: 50px;">
-                        <label style="margin-right: 120px;"> 
-                            <input type ="checkbox" name="likeemail"/>
-                            Yes, I’d like email from Cafe Kitsune
-                        </label>
-                        <div>
-                            <font size="3" color="grey">
-                                <p style="margin-top: 0px; margin-left: 30px;">
-                                    Know about initiative, announcements and product offers
-                                </p>
-                            </font>
-                        </div>
-                        <label style="margin-right: 143px;"> 
-                            <input type ="checkbox" name="term"/>
-                            I agree to the terms and condition
-                        </label>
-                    </div>
-                    <br>
-                    <button target="_blank" style="margin-left: 290px;">
-                        Create account
-                    </button>
-                </fieldset>
+                </div>
+                <div class="third">
+                    <input type ="checkbox" name="" required=""/>
+                    <label>Yes, I’d like email from Cafe Kitsune</label>
+                    <p>
+                        Know about initiative, announcements and product offers
+                    </p>
+                </div>
+                <div class="third">     
+                    <input type ="checkbox" name="" required=""/>
+                    <label>I agree to the terms and condition</label>
+                </div>
+                <br>
+                <div>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Sign up
+                    </a>
+                </div>
             </form>
-            
         </div>
     </center>
 </body>
