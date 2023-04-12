@@ -4,74 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Sign Up form</title>
     <link rel="stylesheet" href="Register.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <figure>
-            <img src="coffee.jpg" height="50px" width="60px">
+            <a href="Index.html">
+                <img src="Logo.png" height="60px" width="70px">
+            </a>
         </figure>
-    </div>
-    <hr>
-    <center>
-        <div class="Info">
-                <div class="first">
-                    <h2>Create an account</h2>
-                    <h4>Kitsune rewards</h4>
-                    <p>Join our membership to earn points for free food and drinks</p>
+        <div class="box">
+            <h2>
+                Sign Up
+            </h2>
+            <form action="#">
+                <div class="input_box">
+                    <input type="text" class="name" required>
+                    <label>Username</label>
                 </div>
-            <form>
-                <div class="second">
-                    <h3>Personal Information</h3>
-                </div>
-                <div class="second">
-                    <input type="text" name="" required=""/>
-                    <label>First Name</label>
-                </div>
-                <div class="second">
-                    <input type="text" name="" required=""/>
-                    <label>Last Name</label>
-                </div>
-                <div class="second">
-                    <h3>Account Security</h3>
-                </div>
-                <div class="second">
-                    <input type="email" name="" required=""/>
-                    <label>Email Address</label>
-                </div>
-                <div class="second">
-                    <input type="password" name="" required=""/>
+                <div class="input_box">
+                    <input type="password" class="password" required>
                     <label>Password</label>
                 </div>
-                <div class="second">
-                        <p>
-                            Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.
-                        </p>
+                <div class="input_box">
+                    <input type="email" class="email" required>
+                    <label>Email</label>
                 </div>
-                <div class="third">
-                    <input type ="checkbox" name="" required=""/>
-                    <label>Yes, I’d like email from Cafe Kitsune</label>
-                    <p>
-                        Know about initiative, announcements and product offers
-                    </p>
-                </div>
-                <div class="third">     
-                    <input type ="checkbox" name="" required=""/>
-                    <label>I agree to the terms and condition</label>
-                </div>
-                <br>
-                <div>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Sign up
+                <button class="signup_button" type="submit">
+                    Create Account
+                </button>
+                <div class="login_link">
+                    <a href="Sign in.html">
+                        Already have an account?
                     </a>
                 </div>
             </form>
         </div>
-    </center>
+    </div> 
 </body>
 </html>
