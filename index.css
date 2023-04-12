@@ -257,7 +257,7 @@ text-align: center;
 /*<footer>*/
 footer{
     background-color: #333;
-    color: #fff;
+    color: #ffff;
     padding: 20px;
 }
 /*footer*/
@@ -279,7 +279,7 @@ footer nav li{
 }
 /*footer nav a*/
 footer nav a{
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.2s ease;
@@ -287,4 +287,8 @@ footer nav a{
 /*footer nav a:hover*/
 footer nav a:hover{
     color: #ccc;
+}
+
+footer nav ul li a{
+    color: white;
 }
