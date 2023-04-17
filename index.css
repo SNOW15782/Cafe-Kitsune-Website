@@ -22,8 +22,13 @@ h1{
     font-size: 30px;
     color: #333;
     text-align: center;
-
 }
+/*H1 anchor*/
+a{
+    text-decoration: none;
+    color: #333;
+}
+
 /*header nav*/
 nav{
     margin-top: 10px;
