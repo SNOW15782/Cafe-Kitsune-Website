@@ -7,8 +7,7 @@
 
 /*header*/
 header{
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  background-color: #012d39;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -18,7 +17,7 @@ header{
 h1{
   font-size: 30px;
   font-size: 30px;
-  color: #333;
+  color: #fafafa;
   text-align: center;
 }
 /*header nav*/
@@ -40,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #333;
+  color: #fafafa;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease;
@@ -61,18 +60,20 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .card{
   width: 300px;
   height: 440px;
-  margin: 10px;
+  margin: 50px;
   padding-bottom: 30px;
   border-radius: 15px;
   display: grid;
   grid-template-rows: 1fr 0;
-  transition: grid-template-rows 500ms;
-  background-color: rgb(34, 39, 37);
+  transition: grid-template-rows 0.8s;
+  background-color: #f3e9e2;
   overflow: hidden;
 }
 
@@ -88,7 +89,7 @@ nav ul li a:hover {
 }
 
 figcaption{
-  color:beige;
+  color:rgb(0, 0, 0);
 }
 
 .name{
@@ -129,7 +130,8 @@ figcaption{
 button{
   text-transform: uppercase;
   border: none;
-  background-image: linear-gradient(90deg, #2cd9ff, #7effb2); 
+  transition: 0.4s;
+  background-color: #f28f5d; 
   color: #090909;  
   border-radius: 30px; 
   font-size: 16px;
@@ -139,7 +141,7 @@ button{
 /*if use button need to use js & can use a also*/
 button:hover{
   cursor: pointer;
-  background: white;
+  background-color: #f5b899;
   color:#090909;
 }
 
