@@ -1,0 +1,48 @@
+
+/*header*/
+header{
+  background-color: #012d39;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*H1*/
+h1{
+  font-size: 30px;
+  font-size: 30px;
+  color: #fafafa;
+  text-align: center;
+}
+/*header nav*/
+nav{
+  margin-top: 10px;
+}
+/*nav uordered list*/
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+/*nav list*/
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  /*color: #f7b731;*/
+  text-decoration: line-through;
+  text-decoration-color: #f7b731 ;
+  text-decoration-thickness: 2px;
+}

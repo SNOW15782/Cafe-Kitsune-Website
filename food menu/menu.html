@@ -7,7 +7,8 @@
 
     <title>Menu List</title>
     <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="menuNav.css" />
+    <link rel="stylesheet" href="menuFilter.css" />
+    <link rel="stylesheet" href="menuHead.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -38,15 +39,17 @@
       </nav>
     </div>
     
-    <div>
-      <ul>
-        <li>Origin Coffee</li>
-        <li></li>
-      </ul>
+    <div class="filterBtn">
+      <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
+      <button class="btn" onclick="filterSelection('classic')"> Classics</button>
+      <button class="btn" onclick="filterSelection('origin')"> Origin</button>
+      <button class="btn" onclick="filterSelection('fruits')"> Cold brew</button>
+      <button class="btn" onclick="filterSelection('colors')"> Set</button>
     </div>
+    
 
-    <section class="card_grid">
-      <figure class="card">
+    <div class="card_grid">
+      <div class="card">
         <img src="../images/VividBloomPDP_large.avif" alt="Study" />
         <figcaption >
           <div>
@@ -66,9 +69,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STCShopifyTrapperCreek_ProductImageTransparentPNG_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -88,9 +91,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STCShopifyHollerMountain_ProductImageTransparentPNG_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -110,9 +113,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STCShopifyHairbender_ProductImageTransparentPNG_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -132,9 +135,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STCShopifyFrenchRoast_ProductImageTransparentPNG_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -154,9 +157,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STC-Shopify-PDP-PNG_mordecofe_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -176,9 +179,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STC-Shopify-PDP-Peru_Churupampa_1_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -198,9 +201,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/STC-Shopify-Costa-Rica-Montes-De-Oro2021_Product-Image-Transparent-PNG_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -220,9 +223,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/SO_Bag_RanchoCarmen2023_1_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -242,9 +245,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Rwanda_Huye_Mountain_2023_1_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -264,9 +267,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Roaster_sPickbadgeBies_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -286,9 +289,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Hundred_Mile_Product_1_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -308,9 +311,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Homestead_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -330,9 +333,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Founders_Blend_Product_1_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -340,7 +343,7 @@
           </div>
           <div>
             <p class="description">
-              A smooth, all-day drinker with certified organic coffees from Central and South America, bringing sunshine to your cup.
+              A smooth, all-day drinker with certified organic coffees from Central and South America.
             </p>
           </div>
           <div class="detail">
@@ -352,9 +355,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/El_Jordan_2023-01_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -374,9 +377,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/coldbrew.avif" alt="Study" />
         <figcaption>
           <div>
@@ -396,9 +399,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Passport_Trio_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -418,9 +421,9 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
 
-      <figure class="card">
+      <div class="card">
         <img src="../images/Blend_Trio_large.avif" alt="Study" />
         <figcaption>
           <div>
@@ -440,7 +443,7 @@
             </div>
           </div>
         </figcaption>
-      </figure>
+      </div>
       
     </section>
   </body>

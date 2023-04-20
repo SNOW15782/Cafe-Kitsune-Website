@@ -1,0 +1,57 @@
+.category{
+  position: absolute;
+  top: 0;
+  left: 115px;
+  overflow: visible;
+}
+
+.category ul{
+  justify-content: left;
+  margin-top: 130px;
+
+}
+
+.category p{
+  font-size: 1.25rem;
+  line-height: 1.22;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s ease-in;
+  border-width: 0;
+  padding-bottom: 0.375rem;
+  font-weight: 500;
+}
+
+.category p:hover{
+  color: #012d39;
+  border-bottom: 1px solid #012d39;
+  cursor: pointer;
+}
+
+/*filter section*/
+.filterBtn{
+  position: absolute;
+  top: 170px;
+  left: 115px;
+}
+
+.filterBtn button{
+  background: none;
+  margin: 10px;
+  border-radius: 30px;
+  width: 10em;
+  padding:1em;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.filterBtn button:hover{
+  cursor: pointer;
+  background: #012d39;
+  color:#fafafa;
+}
