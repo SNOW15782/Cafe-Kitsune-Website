@@ -1,7 +1,0 @@
-Retro pallete (not confirmed)
-#e9311a
-#ed6335
-#ecae7d
-#8db4ad
-#026c80
-#064c72

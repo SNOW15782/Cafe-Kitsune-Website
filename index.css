@@ -261,7 +261,7 @@ text-align: center;
 }
 /*<footer>*/
 footer{
-    background-color: #333;
+    background-color: #fff;
     color: #ffff;
     padding: 20px;
 }
@@ -278,6 +278,8 @@ footer nav ul{
     display: flex;
     justify-content: center;
 }
+
+
 /*footer nav li*/
 footer nav li{
     margin: 0 10px;
