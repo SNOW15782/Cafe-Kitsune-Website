@@ -10,13 +10,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 240px;
+  margin-top: 220px;
   margin-bottom: 100px;
 }
 
 .card{
-  width: 300px;
-  height: 430px;
+  /*descrip size*/
+  width: 340px;
+  height: 494px;
   margin: 50px;
   /*name height*/
   padding-bottom: 50px;
@@ -24,7 +25,7 @@
   display: grid;
   grid-template-rows: 1fr 0;
   transition: grid-template-rows 0.8s;
-  background-color: #f3e9e2;
+  background-color: #EBF5EE;
   overflow: hidden;
 }
 
@@ -53,8 +54,8 @@ figcaption{
 
 .detail{
   display: grid;
-  grid-template-columns: 150px 150px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;/**/
 }
 
 .description{
@@ -62,7 +63,7 @@ figcaption{
   padding-left: 5px;
   font-weight: 200;
   font-size: 16px;
-  height: 65px;
+  height: 60px;
 }
 
 .detail p{
@@ -82,7 +83,7 @@ figcaption{
   text-transform: uppercase;
   border: none;
   transition: 0.4s;
-  background: #f28f5d; 
+  background: #ffffff; 
   color: #090909;  
   border-radius: 30px; 
   font-size: 16px;
@@ -92,7 +93,7 @@ figcaption{
 /*if use button need to use js & can use a also*/
 .btn button:hover{
   cursor: pointer;
-  background: #f5b899;
+  background: #78A1BB;
   color:#090909;
 }
 

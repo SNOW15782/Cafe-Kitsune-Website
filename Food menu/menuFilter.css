@@ -1,14 +1,13 @@
 .category{
   position: absolute;
   top: 0;
-  left: 115px;
+  left: 55px;
   overflow: visible;
 }
 
 .category ul{
   justify-content: left;
-  margin-top: 130px;
-
+  margin-top: 90px;
 }
 
 .category p{
@@ -24,16 +23,16 @@
 }
 
 .category p:hover{
-  color: #012d39;
-  border-bottom: 1px solid #012d39;
+  color: #E13535;
+  border-bottom: 1px solid #E13535;
   cursor: pointer;
 }
 
 /*filter section*/
 .filterBtn{
   position: absolute;
-  top: 170px;
-  left: 115px;
+  top: 150px;
+  left: 55px;
 }
 
 .filterBtn button{
@@ -52,6 +51,6 @@
 
 .filterBtn button:hover{
   cursor: pointer;
-  background: #012d39;
+  background: #E13535;
   color:#fafafa;
 }
