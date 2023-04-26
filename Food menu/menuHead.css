@@ -5,19 +5,21 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   display: grid;
-  grid-template-columns: 45px 90px 1fr;
+  grid-template-columns: 45px 100px 1fr;
 }
 
 img{
   width: 100%;
+  padding-top: 8px;
 }
 img:hover{
   cursor: pointer;
 }
 /*H1*/
 h1{
+  font-family: 'Gotu', sans-serif;
   font-size: 20px;
   color: #000000;
   text-align: left;
@@ -32,7 +34,7 @@ nav ul{
   display: flex;
   justify-content: right;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 /*nav list*/
 nav ul li {
