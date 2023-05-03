@@ -1,0 +1,18 @@
+.head{
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.input{
+  width: 60%;
+  height: 200px;
+  background-color: rgba(228, 166, 166, 0.445);
+}
+.input img{
+  object-fit: contain;
+}
+
+.cart{
+  width: 40%;
+  background-color: rgba(0, 0, 255, 0.377);
+}
