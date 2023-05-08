@@ -55,8 +55,8 @@
   flex: 1;
   margin-left: 100px;
   margin-right: 100px;
-  max-width: 200px;
-  min-width: 150px;
+  max-width: 300px;
+  min-width: 200px;
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -140,15 +140,11 @@
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  filter: brightness(50%)
 }
 .overlay{
   position: absolute;
-  width: 100%;
-  height: 720px;
-  background-color: rgba(0,0,0,0.4);
-}
-.banner h2{
-  position: absolute;
+  width: 600px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -157,15 +153,13 @@
   text-align: center;
   z-index: 1;
 }
+.banner h4{
+  text-align: center;
+  margin: 0;
+}
 .banner p{
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 20px;
   text-align: center;
-  color: #fff;
-  z-index: 1;
 }
 
 
