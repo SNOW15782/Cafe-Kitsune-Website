@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styleadmin.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+        
+        
+        .content{
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 0px;
+            background-color: #fff;
+        }
+
+        .profile-header{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-header h2{
+            padding-top: 10px;
+            font-size: 48px;
+            margin: 0;
+            color: #333;
+        }
+
+        .profile-header p{
+            font-size: 24px;
+            margin: 0;
+            color: #666;
+        }
+
+        .profile-body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-img{
+            border-radius: 50%;
+            margin-right: 40px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .profile-info
+        {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-info li{
+            margin-bottom: 20px;
+        }
+
+        .profile-info li span{
+            margin-right: 20px;
+        }
+
+        .profile-footer{
+            border-top: 1px solid #ccc;
+            padding-top: 50px;
+        }
+
+        .profile-footer p{
+            font-size: 24px;
+            line-height: 1.5;
+            margin: 0;
+            color: #666;
+        }
+
+        .profile-footer h3{
+            font-size: 31px;
+            line-height: 1.5;
+            margin-top: -30px;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="menu-toggle">
+        <div class="sidebar">
+            <div class="side-header">
+                <h2>Kitsune</h2>
+            </div>
+
+            <div class="profile">
+                <h3>Welcome, Jason</h3>
+                <small>Admin</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <a href="admindashboard.html">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="adminprofile.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-exclamation"></span>
+                            <small>Request</small>
+                            <!--Request tab from manager-->
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            <span class="las la-project-diagram"></span>
+                            <small>MyAnalytics</small>
+                            <!--Graphing tab-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <header>
+                <div class="header-content">
+                    <label for="nav-toggle"></label>
+
+                    <div class="header-menu">
+                        <label for="">
+                            <span class="las la-search"></span>
+                        </label>
+
+                        <div class="notify-icon">
+                            <span class="las la-envelope"></span>
+                            <span class="notify">5</span>
+                        </div>
+
+                        <div class="user">
+                            <div><img class="bg-img" src="Images/profile2.png" alt="admin picture" height="40px" width="40px"></div>
+                            <span class="las la-power-off"></span>
+                            <span>Logout</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class = "content">
+                    <div class ="profile-header">
+                        <h2> Jason</h2>
+                        <p>Admin</p>
+                    </div>
+                    <div class ="profile-body">
+                        <img class="profile-img" src="https://www.kirkland.com/-/media/professionals/j/joffe-justin-l.jpg?rev=96e2153dfe634ec686a9e9a86fcd306e" alt="admin image">
+                        <div class = "profile-info">
+                            <ul>
+                                <li><span class ="las la-user"></span>Username: admin.kitsune</li>
+                                <li><span class ="las la-envelope"></span>Email: Jason.admin@cafekitsune.com.my</li>
+                                <li><span class ="las la-map-marker"></span>Branch: (+60) Malaysia</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "profile-footer">
+                        <h3> Friendly Reminder </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo quo ad magnam reiciendis fugiat dolores accusantium, error delectus non ratione ipsum eligendi iste dicta molestiae beatae cumque facere ex?</p>
+                    </div>
+                </div>
+            </main>
