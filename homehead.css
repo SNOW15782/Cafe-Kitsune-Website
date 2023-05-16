@@ -125,20 +125,14 @@
 
 
 /*video banner*/
-.banner {
-  position: top;
+.videocontainer{
+  width: 100%;
   height: 720px;
-  overflow: hidden;
+  position: top;
 }
-.video-container {
-  position : absolute;
+video{
   width: 100%;
   height: 100%;
-}
-.banner video{
-  position:absolute;
-  min-width: 100%;
-  min-height: 100%;
   object-fit: cover;
   filter: brightness(50%)
 }
@@ -153,13 +147,14 @@
   text-align: center;
   z-index: 1;
 }
-.banner h4{
+.overlay h4{
   text-align: center;
   margin: 0;
 }
-.banner p{
+.overlay p{
   font-size: 20px;
   text-align: center;
+  margin: 0;
 }
 
 
