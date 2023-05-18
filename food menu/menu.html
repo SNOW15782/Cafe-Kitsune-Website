@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Menu List</title>
-    <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="menuFilter.css" />
-    <link rel="stylesheet" href="menuHead.css" />
-    <!--gotu,michroma,robmono-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div id="logo">
-        <img src="../images/logokopi.png">
-      </div>
-      <div id="logoname">
-        <h1>Café Kitsuné</h1>
-      </div>
-      <nav class="navigation">
-          <ul>
-              <li><a href = "/Index.html">Home</a></li>
-              <li><a href = "#">Menu</a></li>
-              <li><a href = "/About/about.html">About Us</a></li>
-              <li><a href = "#">Contact Us</a></li>
-              <li><a href = "#">Kitsune Musique</a></li>
-              <li><a href = "/User login/Sign in.html">Login</a></li>
-              <li><a heref = "#">Career</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Menu List</title>
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="menuFilter.css" />
+  <link rel="stylesheet" href="../headerNav.css" />
+  <link rel="stylesheet" href="../footer.css" />
+  <!--gotu,michroma,robmono-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+  <header>
+
+    <!--left nav section-->
+    <div class="headerFlex">
+      <nav class="navSection">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="About/about.html">about</a></li>
+          <li><a href="#">location</a></li>
+          <li><a href="../Kitsune Musique/kitsuneMusique.html">Kitsune Musique</a></li>
+        </ul>
       </nav>
-    </header>
+      <!--logo-->
+      <div class="logoSection">
+        <a href="../index.html"><img src="../images/logokopi.png"></a>
+        <p>Café Kitsuné</p>
+      </div>
+      <!--right nav section-->
+      <nav class="accSection">
+        <ul>
+          <li><a href="#">cart</a></li>
+          <li><a href="#">account</a></li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icons">
+          <path fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
+            clip-rule="evenodd" />
+        </svg>
+      </nav>
+    </div>
 
+  </header>
+
+  <main>
+    <!--filter-->
     <div class="category">
       <nav>
         <ul>
-          <li><p>COFFEE</p></li>
-          <li><p>MERCH</p></li>
+          <li><a>COFFEE</a></li>
+          <li><a>MERCH</a></li>
         </ul>
       </nav>
     </div>
-    
+
     <div class="filterBtn">
       <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
       <button class="btn" onclick="filterSelection('classic')"> Classics</button>
@@ -51,12 +73,12 @@
       <button class="btn" onclick="filterSelection('fruits')"> Cold brew</button>
       <button class="btn" onclick="filterSelection('colors')"> Set</button>
     </div>
-    
 
+    <!--menu-->
     <div class="card_grid">
       <div class="card">
         <img src="../images/VividBloomPDP_large.avif" alt="Study" />
-        <figcaption >
+        <figcaption>
           <div>
             <p class="name">Vivid Bloom</p>
           </div>
@@ -209,14 +231,16 @@
       </div>
 
       <div class="card">
-        <img src="../images/STC-Shopify-Costa-Rica-Montes-De-Oro2021_Product-Image-Transparent-PNG_large.avif" alt="Study" />
+        <img src="../images/STC-Shopify-Costa-Rica-Montes-De-Oro2021_Product-Image-Transparent-PNG_large.avif"
+          alt="Study" />
         <figcaption>
           <div>
             <p class="name">Montes De Oro</p>
           </div>
           <div>
             <p class="description">
-              Fine coffee from Tarrazú, Costa Rica, with dedication of Emilio & Laura Gamboa at their farm and micro-mill.
+              Fine coffee from Tarrazú, Costa Rica, with dedication of Emilio & Laura Gamboa at their farm and
+              micro-mill.
             </p>
           </div>
           <div class="detail">
@@ -414,7 +438,8 @@
           </div>
           <div>
             <p class="description">
-              Coffee trip around the world: coffees from Latin America, Indonesia, and Africa for a wild and delicious ride.
+              Coffee trip around the world: coffees from Latin America, Indonesia, and Africa for a wild and delicious
+              ride.
             </p>
           </div>
           <div class="detail">
@@ -436,7 +461,8 @@
           </div>
           <div>
             <p class="description">
-              Three most popular blends for newbies or long-time fans. Perfect as a gift or to experience our iconic coffees.
+              Three most popular blends for newbies or long-time fans. Perfect as a gift or to experience our iconic
+              coffees.
             </p>
           </div>
           <div class="detail">
@@ -449,7 +475,24 @@
           </div>
         </figcaption>
       </div>
-      
-    </section>
-  </body>
+  </main>
+
+  <footer class="foot">
+
+    <!--&copy is basically copyright symbol-->
+    <nav>
+      <ul>
+        <li><a href="https://www.facebook.com/cafekitsuneparis/" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/kitsune" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/cafekitsune/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@cafekitsune?lang=en" target="_blank">Tik Tok</a></li>
+      </ul>
+    </nav>
+    <p>Copyrigth &copy; 2023 Cafe Kitsune . All rights reserved</p>
+
+  </footer>
+
+  </section>
+</body>
+
 </html>
