@@ -18,7 +18,7 @@
             <div class="profile">
                 <img class="profile-img bg-img" src="Images/profile1.png" alt="" height="90px" width="90px">
                 <h3>Hi, Admin</h3>
-                <small>Cafe Kitsune (Malaysia Branch)</small>
+                <small>(Malaysia Branch)</small>
             </div>
 
             <div class="side-menu">
@@ -67,13 +67,15 @@
 
                         <div class="notify-icon">
                             <span class="las la-envelope"></span>
-                            <span class="notify">5</span>
+                            <span class="notify">3</span>
                         </div>
 
                         <div class="user">
+                            <a href="index.html" class="logout-link">
                             <div><img class="bg-img" src="Images/profile2.png" alt="" height="40px" width="40px"></div>
                             <span class="las la-power-off"></span>
                             <span>Logout</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -238,8 +240,47 @@
 
         </div>
 
-        <script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            const table = document.getElementById('staff-table');
+            const headers = table.querySelectorAll('th');
 
-        </script>
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const tableRows = Array.from(table.querySelectorAll('tbody tr'));
+                    const headerIndex = Array.from(headers).indexOf(header);
+                    const isAscending = header.classList.toggle('asc');
+                    const compareFn = (a, b) => {
+                        const rowDataA = a.children[headerIndex].textContent;
+                        const rowDataB = b.children[headerIndex].textContent;
+
+                        return isAscending
+                            ? rowDataA.localeCompare(rowDataB)
+                            : rowDataB.localeCompare(rowDataA);
+                    };
+
+                    const sortedRows = tableRows.sort(compareFn);
+                    tableRows.forEach(row => row.parentNode.removeChild(row));
+                    table.querySelector('tbody').append(...sortedRows);
+                });
+            });
+
+            const addButton = document.getElementById('add-button');
+            addButton.addEventListener('click', () => {
+                const newRow = document.createElement('tr');
+
+                // Create cells for each column
+                headers.forEach(header => {
+                    const cell = document.createElement('td');
+                    cell.textContent = 'New Data'; // Replace with logic to get the data for each cell
+                    newRow.appendChild(cell);
+                });
+
+                table.querySelector('tbody').appendChild(newRow);
+            });
+        });
+
+</script>
+
 </body>
 </html>

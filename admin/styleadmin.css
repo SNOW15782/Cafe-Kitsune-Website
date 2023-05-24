@@ -12,7 +12,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 #menu-toggle{
@@ -167,13 +167,14 @@ header{
 .user div{
     height: 40px;
     width: 40px;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .user span:last-child{
     display: inline-block;
     margin-left: .3rem;
     font-size: .8rem;
+    color:var(--text-grey)
 }
 
 main{
@@ -361,4 +362,18 @@ table tbody td:first-child{
     color: var(--main-color);
     font-weight: 600;
     font-size: .9rem;
+}
+.user a.logout-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-grey);
+    font-size: 1rem;
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a.logout-link:hover {
+  text-decoration: none; /* Add underline on hover */
 }
