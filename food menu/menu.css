@@ -44,7 +44,7 @@ body{
 }
 
 figcaption{
-  color:rgb(0, 0, 0);
+  color: #212A2F;
 }
 
 .name{
@@ -87,7 +87,7 @@ figcaption{
   border: none;
   transition: 0.4s;
   background: #fafafa; 
-  color: #090909;  
+  color: #212A2F;  
   border-radius: 30px; 
   font-size: 16px;
   padding: 8px;
@@ -97,7 +97,7 @@ figcaption{
 .btn button:hover{
   cursor: pointer;
   background: #78A1BB;
-  color:#090909;
+  color: #212A2F;
 }
 
 

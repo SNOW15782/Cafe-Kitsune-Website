@@ -1,7 +1,7 @@
 .category{
   overflow: visible;
   padding-bottom: 1px;
-  border-bottom: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid #212A2F;
 }
 
 .category ul{
@@ -17,13 +17,14 @@
 }
 
 .category a{
+  text-decoration: none;
   font-size: 24px;
   line-height: 1.22;
   margin: 0.5rem 0;
   border-bottom: 1px solid transparent;
   transition: all 0.4s ease-in;
   border-width: 0;
-  color: rgb(0, 0, 0);
+  color: #212A2F;
   font-weight: 500;
 }
 

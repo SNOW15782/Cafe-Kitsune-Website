@@ -30,7 +30,7 @@ video{
 .overlay{
   position: absolute;
   width: 600px;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
@@ -43,9 +43,20 @@ video{
   margin: 20px 0;
 }
 .overlay p{
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   margin: 0;
+}
+
+.overlay a{
+  color: #fafafa;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.overlay a:hover{
+  color: #78A1BB;
 }
 
 /*card*/
@@ -83,7 +94,7 @@ video{
 }
 
 figcaption{
-  color:rgb(0, 0, 0);
+  color: #212A2F;
 }
 
 .hName{
@@ -126,7 +137,7 @@ figcaption{
   border: none;
   transition: 0.4s;
   background: #fafafa; 
-  color: #090909;  
+  color: #212A2F;  
   border-radius: 30px; 
   font-size: 12px;
   padding: 8px;
@@ -136,7 +147,7 @@ figcaption{
 .hBtn button:hover{
   cursor: pointer;
   background: #78A1BB;
-  color:#090909;
+  color: #212A2F;
 }
 
 .new{

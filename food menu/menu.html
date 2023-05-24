@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Menu List</title>
+  <title>Coffee Menu - Café Kitsuné</title>
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="menuFilter.css" />
-  <link rel="stylesheet" href="../headerNav.css" />
+  <link rel="stylesheet" href="../header.css" />
   <link rel="stylesheet" href="../footer.css" />
   <!--gotu,michroma,robmono-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +28,12 @@
     <div class="headerFlex">
       <nav class="navSection">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="About/about.html">about</a></li>
-          <li><a href="#">location</a></li>
-          <li><a href="../Kitsune Musique/kitsuneMusique.html">Kitsune Musique</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/About/about.html">about</a></li>
+          <li>
+            <a href="https://www.google.com/maps/search/cafe+Kitsune+13+Stamford+Rd,+%2301-11+178905+Singapore/@1.2933188,103.8512456,17z/data=!3m1!4b1">location</a>
+          </li>
+          <li><a href="/Kitsune Musique/kitsuneMusique.html">Kitsune Musique</a></li>
         </ul>
       </nav>
       <!--logo-->
@@ -42,7 +44,7 @@
       <!--right nav section-->
       <nav class="accSection">
         <ul>
-          <li><a href="#">cart</a></li>
+          <li><a href="/checkout.html">cart</a></li>
           <li><a href="#">account</a></li>
         </ul>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icons">
@@ -60,8 +62,8 @@
     <div class="category">
       <nav>
         <ul>
-          <li><a>COFFEE</a></li>
-          <li><a>MERCH</a></li>
+          <li><a href="/Food menu/menu.html" id="coffee">COFFEE</a></li>
+          <li><a href="/Food menu/merch.html" id="merch">MERCH</a></li>
         </ul>
       </nav>
     </div>
@@ -70,8 +72,8 @@
       <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
       <button class="btn" onclick="filterSelection('classic')"> Classics</button>
       <button class="btn" onclick="filterSelection('origin')"> Origin</button>
-      <button class="btn" onclick="filterSelection('fruits')"> Cold brew</button>
-      <button class="btn" onclick="filterSelection('colors')"> Set</button>
+      <button class="btn" onclick="filterSelection('cold')"> Cold brew</button>
+      <button class="btn" onclick="filterSelection('set')"> Set</button>
     </div>
 
     <!--menu-->
@@ -333,7 +335,7 @@
           </div>
           <div class="detail">
             <div>
-              <p>68.90</p>
+              <p>RM 68.90</p>
             </div>
             <div class="btn">
               <button>add to cart</button>
