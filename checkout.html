@@ -22,7 +22,7 @@
     <div class="col-75">
       <div class="container1">
         <form action="/thankyou.html">
-          <div>
+          <div class="col-50" >
             <span>
               <a href="/index.html"><img src="/images/logokopi.png" id="logo-section"></a>
             </span>
@@ -39,10 +39,8 @@
               <input type="text" id="city" name="city" placeholder="City" required>
 
               <div class="row">
-                <div class="col-50">
-                  <input type="text" id="state" name="state" placeholder="State" required>
-                </div>
-                <div class="col-50">
+                <div style="display: flex; width: 100%;">
+                  <input type="text" id="state" name="state" placeholder="State" style="margin-right: 10px;" required>
                   <input type="text" id="zip" name="zip" placeholder="ZIP" minlength="5" maxlength="5" required>
                 </div>
               </div>
@@ -62,18 +60,17 @@
               <input type="text" id="ccnum" name="cardnumber" placeholder="Card number">
               <input type="text" id="expmonth" name="expmonth" placeholder="Expiration month (MM)">
               <div class="row">
-                <div class="col-50">
-                  <input type="text" id="expyear" name="expyear" placeholder="Expiration year (YY)">
-                </div>
-                <div class="col-50">
+                <div style="display: flex; width: 100%;">
+                  <input type="text" id="expyear" name="expyear" placeholder="Expiration year (YY)" style="margin-right: 10px;">
                   <input type="text" id="cvv" name="cvv" placeholder="CVV">
                 </div>
               </div>
             </div>
-
           </div>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-          <input type="submit" class="btn" href="thankyou.html" value="Continue to checkout">
+          <div class="col-50" style="display: grid;  grid-template-columns: 28px 1fr 200px; align-items: center;">
+            <input type="checkbox" checked="checked" name="sameadr" style="width: 13px; margin: 0;"> Shipping address same as billing
+            <input type="submit" class="btn" href="thankyou.html" value="Continue to checkout">
+          </div>
         </form>
       </div>
     </div>
@@ -81,12 +78,12 @@
 
 
     <div class="col-25">
-      <div class="container">
+      <div class="container2">
         <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
         <p><img src="/images/Hundred_Mile_Product_1_large.avif">Hundred Mile<span class="price">RM 68.90</span></p>
         <p><img src="/images/huyeee.png">Huye Mountain<span class="price">RM 108.60</span></p>
         <hr>
-        <p>Total <span class="price" style="color:black"><b>RM 177.50</b></span></p>
+        <p id="total">Total <span class="totalprice" style="color:black"><b>RM 177.50</b></span></p>
       </div>
     </div>
   </div>
