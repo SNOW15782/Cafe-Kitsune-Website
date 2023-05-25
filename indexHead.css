@@ -1,8 +1,8 @@
 /*headerbox*/
-.headerFlex{
+.headerFlex {
   height: 200px;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   position: fixed;
 }
 
-.headerColor{
+.headerColor {
   height: 100px;
   width: 100%;
   z-index: 100;
@@ -19,105 +19,119 @@
   justify-content: space-between;
   color: rgb(0, 0, 0);
   position: fixed;
-  background-color: #EBF5EE;
+  background-color: #ebf5ee;
   box-shadow: 0px 3px 8px rgb(199, 199, 199);
 }
-.transition{
+.transition {
   -webkit-transition: height 1s;
   transition: height 1s ease;
 }
 
 /*left*/
-.navSection{
+.navSection {
   z-index: inherit;
   width: 420px;
   display: flex;
   align-items: center;
 }
-.navSection ul{
+.navSection ul {
   list-style: none;
   display: flex;
   margin-left: 20px;
   padding: 0;
 }
-.navSection li{
+.navSection li {
   margin-right: 15px;
 }
-.navSection a{
+.navSection a {
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
 }
 
 /*middle*/
-.logoSection{
+.logoSection {
   z-index: inherit;
-  flex:content;
+  flex: content;
   margin-left: 100px;
   margin-right: 100px;
   max-width: 200px;
   min-width: 200px;
   display: flex;
-  flex-direction:column;
-  align-items:center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-.logoSection img{
+.logoSection img {
   width: 40px;
   margin-top: 8px;
 }
-.logoSection p{
+.logoSection p {
   font-size: 24px;
-  margin: 5px 0 0 0 ;
+  margin: 5px 0 0 0;
   font-weight: 500;
 }
 
 /*right*/
-.accSection{
+.accSection {
   z-index: inherit;
   width: 420px;
   display: flex;
   align-items: center;
   justify-content: right;
 }
-.accSection ul{
+.accSection ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-.accSection li{
+.accSection li {
   margin-right: 15px;
 }
-.accSection a{
+.accSection a {
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
 }
-.icons{
+.icons {
   display: block;
   width: 30px;
   margin-right: 24px;
 }
 
-
 /*general hover*/
-.navSection li:hover{
+.navSection li:hover {
   cursor: pointer;
   text-decoration: line-through;
-  color: #E13535;
+  color: #e13535;
 }
-.accSection li:hover{
+.accSection li:hover {
   cursor: pointer;
   text-decoration: line-through;
-  color: #E13535;
+  color: #e13535;
 }
 
-.logoSection:hover{
+.logoSection:hover {
   cursor: pointer;
 }
 
-.icons:hover{
+.icons:hover {
   cursor: pointer;
-  color: #E13535;
+  color: #e13535;
+}
+
+@media screen and (max-width: 900px) {
+  .navSection {
+    display: none;
+  }
+
+  .accSection {
+    display: none;
+  }
+
+  .logoSection {
+    max-width: none;
+    min-width: none;
+  }
 }

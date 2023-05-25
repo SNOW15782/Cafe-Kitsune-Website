@@ -19,7 +19,7 @@ footer{
 .videocontainer{
   width: 100%;
   height: 720px;
-  position: top;
+  position: relative;
 }
 video{
   width: 100%;
@@ -30,7 +30,7 @@ video{
 .overlay{
   position: absolute;
   width: 600px;
-  top: 25%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
@@ -39,6 +39,7 @@ video{
   z-index: 1;
 }
 .overlay h3{
+  font-family: 'Gotu', sans-serif;
   text-align: center;
   margin: 20px 0;
 }
