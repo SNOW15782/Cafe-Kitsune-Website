@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
-    padding: 25px 25px 5px 25px;
+    padding: 25px 25px 45px 25px;
     border-radius: 20px;
     border: 2px solid burlywood;
 }
@@ -35,7 +35,7 @@
 
 .input_box input{
     width: 100%;
-    font-size: 18px;
+    font-size: 26px;
     margin: 16px 0px;
     outline: none;
     border-width: 0px 0px 2px 0px;
@@ -58,24 +58,7 @@
     font-size: 16px;
 }
 
-.forgotpassword{
-    margin-top: 20px;
-    display: inline-block;
-    transition: .5s;
-}
-
-.forgotpassword a{
-    color: #000;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.forgotpassword a:hover{
-    text-decoration: line-through;
-    color: red;
-}
-
-.signin_button{
+.reset_button{
     width: 100%;
     background: #EBF5EE;
     border: none;
@@ -88,42 +71,8 @@
     transition: .5s;
 }
 
-.signin_button:active{
+.reset_button:active{
     transform: scale3d(0.9,0.9,0.9);
-}
-
-.signup_link {
-    font-size: 20px;
-    margin-top: 30px;
-    width: 100%;
-    text-align: center;
-}
-
-.signup_link a{
-    color: #000;
-    text-decoration: none;
-}
-
-.signup_link a:hover{
-    text-decoration: line-through;
-    color: red;
-}
-
-.adminpage{
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-.adminpage a{
-    color: #000;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.adminpage a:hover{
-    text-decoration: line-through;
-    color: red;
 }
 
 footer{
@@ -134,3 +83,4 @@ footer{
   justify-content: center;
   background-color: #EBF5EE;
 }
+

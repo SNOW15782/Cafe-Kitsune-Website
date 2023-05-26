@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
-    padding: 25px 25px 5px 25px;
+    padding: 25px 25px 25px 25px;
     border-radius: 20px;
     border: 2px solid burlywood;
 }
@@ -113,17 +113,12 @@
     font-size: 20px;
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 0;
 }
 .adminpage a{
     color: #000;
     font-size: 15px;
     text-decoration: none;
-}
-
-.adminpage a:hover{
-    text-decoration: line-through;
-    color: red;
 }
 
 footer{

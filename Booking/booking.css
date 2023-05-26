@@ -7,7 +7,7 @@ body {
 }
 .container {
   max-width: 800px;
-  margin: 0 400px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -139,4 +139,13 @@ input[type="number"] {
   outline: none;
   border-color: #ffc300;
   box-shadow: 0 0 0 2px rgba (255, 195, 0, 0.5);
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  justify-content: center;
+  background-color: #EBF5EE;
 }

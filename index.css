@@ -27,6 +27,8 @@ video{
   object-fit: cover;
   filter: brightness(50%);
 }
+
+
 .overlay{
   position: absolute;
   width: 600px;
@@ -53,11 +55,16 @@ video{
   color: #fafafa;
   font-size: 14px;
   text-align: center;
+  padding: 10px;
   margin: 0;
+  border-radius: 5px;
+  background-color: #E13535;
+  text-decoration: none;
 }
 
 .overlay a:hover{
   color: #78A1BB;
+  background-color: white;
 }
 
 /*card*/

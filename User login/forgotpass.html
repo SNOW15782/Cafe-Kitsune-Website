@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In form</title>
-    <link rel="stylesheet" href="Sign in.css">
+    <title>Forgot Password form</title>
+    <link rel="stylesheet" href="forgotpass.css">
     <link rel="stylesheet" type="text/css" href="/footer.css">
-    <link rel="stylesheet" type ="text/css" href="/header.css">
+    <link rel="stylesheet" type="text/css" href="/header.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
@@ -18,55 +18,36 @@
         <!--left nav section-->
         <div class="headerFlex">
             <nav class="navSection">
-                
+    
             </nav>
             <!--logo-->
             <div class="logoSection">
-                <a href="index.html"><img src="../images/logokopi.png"></a>
+                <a href="/Index.html"><img src="../images/logokopi.png"></a>
                 <p>Café Kitsuné</p>
             </div>
             <!--right nav section-->
             <nav class="accSection">
-                
+    
             </nav>
         </div>
     
     </header>
 
     <div class="container">
-        <div class="logoSection">
-            <a href="/Index.html"><img src="/images/logokopi.png"></a>
-            <p>Café Kitsuné</p>
-        </div>
         <div class="box">
             <h2>
                 Sign In
             </h2>
-            <form action="/Index.html">
+            <form action="/User login/reset_pass.html">
                 <div class="input_box">
-                    <input type="text" class="name" required>
-                    <label>Username</label>
+                    <input type="email" class="email" required>
+                    <label>Email</label>
                 </div>
                 <div class="input_box">
-                    <input type="password" class="password" required>
-                    <label>Password</label>
+                    <input type="email" class="email" required>
+                    <label>Confirm Email</label>
                 </div>
-                <div class="forgotpassword">
-                    <a href="/User login/forgotpass.html">
-                        Forgot password?
-                    </a>
-                </div>
-                    <input type="submit"class="signin_button"  value="Sign In">
-                <div class="signup_link">
-                    <a href="Register.html">
-                        Don't have an account?
-                    </a>
-                </div>
-                <div class="adminpage">
-                    <a href="#">
-                        Admin login
-                    </a>
-                </div>
+                    <input class="reset_button" type="submit" value="Reset Password">
             </form>
         </div>
     </div> 
