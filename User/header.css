@@ -1,13 +1,19 @@
+
+
 /*headerbox*/
 .headerFlex {
-  height: 200px;
+  font-family: "Roboto Mono";
+  height: 100px;
   width: 100%;
-  z-index: 99;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: rgb(255, 255, 255);
+  color: #212A2F;
   position: fixed;
+  top: 0;
+  background-color: #ebf5ee;
+  box-shadow: 0px 3px 8px rgb(199, 199, 199);
 }
 
 .headerColor {
@@ -17,7 +23,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: rgb(0, 0, 0);
+  color: #212A2F;
   position: fixed;
   background-color: #ebf5ee;
   box-shadow: 0px 3px 8px rgb(199, 199, 199);
@@ -99,11 +105,6 @@
   width: 30px;
   margin-right: 24px;
 }
-.icons {
-  display: block;
-  width: 30px;
-  margin-right: 24px;
-}
 
 /*general hover*/
 .navSection li:hover {
@@ -140,4 +141,3 @@
     min-width: none;
   }
 }
-
