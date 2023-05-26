@@ -126,3 +126,18 @@
   cursor: pointer;
   color: #e13535;
 }
+
+@media screen and (max-width: 900px) {
+  .navSection {
+    display: none;
+  }
+
+  .accSection {
+    display: none;
+  }
+
+  .logoSection {
+    max-width: none;
+    min-width: none;
+  }
+}
