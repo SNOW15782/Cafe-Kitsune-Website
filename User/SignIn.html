@@ -72,20 +72,36 @@
       </form>
     </div>
   </div>
+
+  <footer class="foot">
+
+    <!--&copy is basically copyright symbol-->
+    <nav>
+      <ul>
+        <li><a href="https://www.facebook.com/cafekitsuneparis/" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/kitsune" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/cafekitsune/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@cafekitsune?lang=en" target="_blank">Tik Tok</a></li>
+      </ul>
+    </nav>
+    <p>Copyrigth &copy; 2023 Cafe Kitsune . All rights reserved</p>
+
+  </footer>
+
+  <script type="text/javascript">
+
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form submission
+
+      const username = document.querySelector('.name').value;
+      if (username.startsWith('CKS')) {
+        window.location.href = '/admin/Dashboard.html'; // Redirect to admin dashboard
+      } else {
+        window.location.href = '/User/index.html'; // Redirect to index page
+      }
+    });
+    
+  </script>
+
 </body>
-<footer class="foot">
-
-  <!--&copy is basically copyright symbol-->
-  <nav>
-    <ul>
-      <li><a href="https://www.facebook.com/cafekitsuneparis/" target="_blank">Facebook</a></li>
-      <li><a href="https://twitter.com/kitsune" target="_blank">Twitter</a></li>
-      <li><a href="https://www.instagram.com/cafekitsune/" target="_blank">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/@cafekitsune?lang=en" target="_blank">Tik Tok</a></li>
-    </ul>
-  </nav>
-  <p>Copyrigth &copy; 2023 Cafe Kitsune . All rights reserved</p>
-
-</footer>
-
 </html>
