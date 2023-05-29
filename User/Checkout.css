@@ -88,7 +88,6 @@ input[type="text"] {
 
 input[type="checkbox"] {
   accent-color: #212a2f;
-
 }
 
 label {
@@ -158,6 +157,10 @@ span.price {
 
   .col-25 {
     margin-bottom: 50px;
+  }
+
+  .container2 {
+    height: auto; /* Adjust height as needed for smaller screens */
   }
 }
 

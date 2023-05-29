@@ -151,7 +151,7 @@ figcaption{
   padding: 8px;
   font-weight: 700;
 }
-/*if use button need to use js & can use a also*/
+
 .hBtn button:hover{
   cursor: pointer;
   background: #78A1BB;
