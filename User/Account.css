@@ -12,12 +12,12 @@ body{
 
 .tabs{
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform:translate(-50%,-50%);
-    width: 990px;
-    height: 600px;
-    padding: 30px 20px;
+    width: 900px;
+    height: 550px;
+    padding: 60px 20px 0 20px;
     background: transparent;
     overflow: hidden;
     box-shadow: 0 0 15px 0 burlywood;
